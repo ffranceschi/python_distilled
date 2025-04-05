@@ -11,7 +11,11 @@ class Pessoa:
     def __add__(self, pessoa):
         return Pessoa(self.idade + pessoa.idade)
 
+    def __repr__(self):
+        return f"idade: {self.idade}"
+
 p1 : Pessoa = Pessoa(20)
+repr(print(p1))
 p2 : Pessoa = Pessoa(45)
 
 p3 = p1 + p2
